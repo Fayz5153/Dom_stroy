@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<title>Faktura</title>
+	<!--favicon-->
+	<link rel="icon" href="assets/images/favicon-32x32.png" type="image/png" />
+	<!--plugins-->
+	<link href="assets/plugins/simplebar/css/simplebar.css" rel="stylesheet" />
+	<link href="assets/plugins/select2/css/select2.min.css" rel="stylesheet" />
+	<link href="assets/plugins/select2/css/select2-bootstrap4.css" rel="stylesheet" />
+	<link href="assets/plugins/metismenu/css/metisMenu.min.css" rel="stylesheet" />
+	<link href="assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet" />
+	<!--Data Tables -->
+	<link href="assets/plugins/datatable/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/plugins/datatable/css/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css">
+	<!--plugins-->
+	<link href="assets/plugins/simplebar/css/simplebar.css" rel="stylesheet" />
+	<link href="assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet" />
+	<link href="assets/plugins/metismenu/css/metisMenu.min.css" rel="stylesheet" />
+	<!-- loader-->
+	<link href="assets/css/pace.min.css" rel="stylesheet" />
+	<script src="assets/js/pace.min.js"></script>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+	<!-- Icons CSS -->
+	<link rel="stylesheet" href="assets/css/icons.css" />
+	<!-- App CSS -->
+	<link rel="stylesheet" href="assets/css/app.css" />
+	<link rel="stylesheet" href="assets/css/table.css">
+	
+	
+</head>
+
+<body class="bg-theme bg-theme9">
+	<!-- wrapper -->
+	<div class="wrapper">
+		<!--sidebar-wrapper-->
+		<div class="sidebar-wrapper" data-simplebar="true">
+			<div class="sidebar-header">
+				<div class="">
+					<img src="assets/images/logo-icon.png" class="logo-icon-2" alt="" />
+				</div>
+			</div>
+			<!--navigation-->
+			<ul class="metismenu" id="menu">
+				<li class="menu-label">Web Apps</li>
+				<li> <a href="index.html"><i class="bx bx-home-alt"></i>Analytics</a></li>
+				<li> <a href="./analytikasi.html"><i class="fadeIn animated bx bx-trending-up"></i>Tavar reytingi</a></li>
+				<li> <a href="./qoldiq-tovar.html"><i class="fadeIn animated bx bx-table"></i>Qoldiq tavar</a></li>
+				<li> <a href="./sotilgan-tovar.html"><i class="fadeIn animated bx bx-coin-stack"></i>Sotilgan tavar bo'yicha analiz</a></li>
+				<li> <a href="./buyurtma-berish.html"><i class="fadeIn animated bx bx-cart"></i>Buyurtma Berish</a></li>
+				<li> <a href="./hisobot.html"><i class="fadeIn animated bx bx-abacus"></i>Hisobot</a></li>
+				<li> <a href="./faktura.html"><i class="fadeIn animated bx bx-list-ol"></i>Faktura</a></li>
+			</ul>
+			<!--end navigation-->
+		</div>
+		<!--end sidebar-wrapper-->
+		<!--header-->
+		<header class="top-header">
+			<nav class="navbar navbar-expand">
+				<div class="left-topbar d-flex align-items-center">
+					<a href="javascript:;" class="toggle-btn">	<i class="bx bx-menu"></i>
+					</a>
+				</div>
+				<div class="right-topbar ml-auto">
+					<ul class="navbar-nav">
+						<li class="nav-item dropdown dropdown-user-profile">
+							<a class="nav-link dropdown-toggle dropdown-toggle-nocaret" href="javascript:;" data-toggle="dropdown">
+								<div class="media user-box align-items-center">
+									<div class="media-body user-info">
+										<p class="user-name mb-0">Jessica Doe</p>
+										<p class="designattion mb-0">Available</p>
+									</div>
+									<img src="https://via.placeholder.com/110x110" class="user-img" alt="user avatar">
+								</div>
+							</a>
+							<div class="dropdown-menu dropdown-menu-right">	<a class="dropdown-item" href="javascript:;"><i
+										class="bx bx-user"></i><span>Profile</span></a>
+								<a class="dropdown-item" href="javascript:;"><i
+										class="bx bx-cog"></i><span>Settings</span></a>
+								<a class="dropdown-item" href="javascript:;"><i
+										class="bx bx-tachometer"></i><span>Dashboard</span></a>
+								<a class="dropdown-item" href="javascript:;"><i
+										class="bx bx-wallet"></i><span>Earnings</span></a>
+								<a class="dropdown-item" href="javascript:;"><i
+										class="bx bx-cloud-download"></i><span>Downloads</span></a>
+								<div class="dropdown-divider mb-0"></div>	<a class="dropdown-item" href="javascript:;"><i
+										class="bx bx-power-off"></i><span>Logout</span></a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<!--end header-->
+		<!--page-wrapper-->
+		<div class="page-wrapper">
+			<!--page-content-wrapper-->
+			<div class="page-content-wrapper">
+				<div class="page-content">
+					<!--breadcrumb-->
+					<div class="page-breadcrumb d-none d-md-flex align-items-center mb-3">
+						<div class="pl-3">
+							<nav aria-label="breadcrumb">
+								<ol class="breadcrumb mb-0 p-0">
+									<li class="breadcrumb-item"><a href="javascript:;"><i class='bx bx-home-alt'></i></a>
+									</li>
+									<li class="breadcrumb-item active" aria-current="page"><a href="#">Faktura</a></li>
+								</ol>
+							</nav>
+						</div>
+					</div>
+					<!--end breadcrumb-->
+					<div class="card">
+						<div class="card-body">
+							<div class="filiallar mb-3">
+								<div class="faktura_search">
+									<!-- Button trigger modal -->
+									<button type="button" class="btn btn-light" data-toggle="modal" data-target="#filialgabuyurtma">Filialga buyurtma</button>
+									<!-- Modal -->
+									<div class="modal fade" id="filialgabuyurtma" tabindex="-1" role="dialog" aria-hidden="true">
+										<div class="modal-dialog modal-dialog-centered">
+											<div class="modal-content">
+												<div class="modal-header">
+													<h5 class="modal-title">Buyurtma</h5>
+													<button type="button" class="close" data-dismiss="modal" aria-label="Close">	<span aria-hidden="true">&times;</span>
+													</button>
+												</div>
+												<div class="modal-body">
+													<div class="form-group select2-sm">
+														<h6>Buyurtma nomi</h6>
+														<section class="single-select">
+															<option value="Andijon">Andijon</option>
+															<option value="Farg'ona">Farg'ona</option>
+															<option value="Namangan">Namangan</option>
+															<option value="Toshkent">Toshkent</option>
+														</section>
+													</div>
+													<div class="form-group select2-sm">
+														<h6>Yetkazib beruvchi</h6>
+														<section class="single-select">
+															<option value="1">1</option>
+															<option value="2">2</option>
+															<option value="3">3</option>
+															<option value="4">4</option>
+														</section>
+													</div>
+													<div class="form-group select2-sm">
+														<h6>Filial nomi</h6>
+														<section class="single-select">
+															<option value="A">A</option>
+															<option value="B">B</option>
+															<option value="C">C</option>
+															<option value="D">D</option>
+														</section>
+													</div>
+													<div class="form-group">
+														<h6>Buyurtma kelish vaqti</h6>
+														<input type="text" class="form-control form-control-sm datepicker" placeholder="Sanani Belgiling"/>
+													</div>
+												</div>
+												<div class="modal-footer">
+													<button type="button" class="btn btn-light" data-dismiss="modal">Bekor qilish</button>
+													<button type="button" class="btn btn-light">Buyurtma Berish</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="tovar_exel"></div>
+							</div>
+							<div class="table-responsive faktura">
+								<table id="example" class="table table-striped table-bordered" style="width:100%">
+									<thead>
+										<tr>
+											<th>№</th>
+											<th>Maxsulot nomi</th>
+											<th>Yetkazib beruvchi</th>
+											<th>Ishlab chiqaruvchi</th>
+											<th>O'lchovi</th>
+											<th>Soni</th>
+											<th>Narxi so'm</th>
+											<th>$</th>
+											<th>Sotish narxi so'm</th>
+											<th>$</th>
+											<th>Shtrix kod</th>
+										</tr>
+									</thead>
+									<tbody >
+										<tr>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td><span data-value="kelish_som"></span> so'm</td>
+											<td><span data-value="kelish_dol"></span> $</td>
+											<td><span data-value="sotish_som"></span> so'm</td>
+											<td><span data-value="sotish_dol"></span> $</td>
+											<td></td>
+											
+										</tr>
+										<tr>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td><span data-value="kelish_som"></span> so'm</td>
+											<td><span data-value="kelish_dol"></span> $</td>
+											<td><span data-value="sotish_som"></span> so'm</td>
+											<td><span data-value="sotish_dol"></span> $</td>
+											<td></td>
+											
+										</tr>
+										<tr>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td><span data-value="kelish_som"></span> so'm</td>
+											<td><span data-value="kelish_dol"></span> $</td>
+											<td><span data-value="sotish_som"></span> so'm</td>
+											<td><span data-value="sotish_dol"></span> $</td>
+											<td></td>
+											
+										</tr>
+									</tbody>
+									<tfoot>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+                					<td>Jami: <span class="narxi_som"></span> so'm</td>
+										<td>Jami: <span class="narxi_dol"></span> $</td>
+										<td>Jami: <span class="sotish_narxi_som"></span> so'm</td>
+										<td>Jami: <span class="sotish_narxi_dol"></span> $</td>
+										<td></td>
+									</tfoot>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--end page-content-wrapper-->
+		</div>
+		<!--end page-wrapper-->
+		<!--start overlay-->
+		<div class="overlay toggle-btn-mobile"></div>
+		<!--end overlay-->
+		<!--Start Back To Top Button--> <a href="javaScript:;" class="back-to-top"><i class='bx bxs-up-arrow-alt'></i></a>
+		<!--End Back To Top Button-->
+		<!--footer -->
+		<!-- end footer -->
+	</div>
+	<!-- end wrapper -->
+	<!-- JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	<script src="assets/js/popper.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<!--plugins-->
+	<script src="assets/plugins/simplebar/js/simplebar.min.js"></script>
+	<script src="assets/plugins/metismenu/js/metisMenu.min.js"></script>
+	<script src="assets/plugins/perfect-scrollbar/js/perfect-scrollbar.js"></script>
+	<script src="assets/plugins/select2/js/select2.min.js"></script>
+	<!--Data Tables js-->
+	<script src="assets/plugins/datatable/js/jquery.dataTables.min.js"></script>
+	<script>
+		//Jami kelish narxi som
+		let values1 = document.querySelectorAll("[data-value='kelish_som']");
+		let valuesSum1 = document.querySelector(".narxi_som");
+		const numberFormat1 = new Intl.NumberFormat("en-GB")
+		let sum1 = 0;
+		for (let i =0; i < values1.length; i++) {
+			 sum1 += Number(values1[i].innerHTML.replace(/[\s.,%]/g, ''))
+		}
+		valuesSum1.innerHTML = numberFormat1.format(sum1);
+		//Jami sotish narxi som
+		let values2 = document.querySelectorAll("[data-value='sotish_som']");
+		let valuesSum2 = document.querySelector(".sotish_narxi_som");
+		const numberFormat2 = new Intl.NumberFormat("en-GB")
+		let sum2 = 0;
+		for (let i =0; i < values2.length; i++) {
+			 sum2 += Number(values2[i].innerHTML.replace(/[\s.,%]/g, ''))
+		}
+		valuesSum2.innerHTML = numberFormat2.format(sum2)
+		//Jami kelish narxi dol
+		let values3 = document.querySelectorAll("[data-value='kelish_dol']");
+		let valuesSum3 = document.querySelector(".narxi_dol");
+		const numberFormat3 = new Intl.NumberFormat("en-GB")
+		let sum3 = 0;
+		for (let i =0; i < values3.length; i++) {
+			 sum3 += Number(values3[i].innerHTML.replace(/[\s.,%]/g, ''))
+		}
+		valuesSum3.innerHTML = numberFormat3.format(sum3);
+		//Jami sotish narxi dol
+		let values4 = document.querySelectorAll("[data-value='sotish_dol']");
+		let valuesSum4 = document.querySelector(".sotish_narxi_dol");
+		const numberFormat4 = new Intl.NumberFormat("en-GB")
+		let sum4 = 0;
+		for (let i =0; i < values4.length; i++) {
+			 sum4 += Number(values4[i].innerHTML.replace(/[\s.,%]/g, ''))
+		}
+		valuesSum4.innerHTML = numberFormat4.format(sum4);
+  </script>
+	<script>
+		$(document).ready(function () {
+			//Default data table
+			var table = $('#example').DataTable({
+				buttons: ['excel']
+			});
+			table.buttons().container().appendTo('.tovar_exel');
+		})
+		$('.single-select').select2({
+			theme: 'bootstrap4',
+			width: $(this).data('width') ? $(this).data('width') : $(this).hasClass('w-100') ? '100%' : 'style',
+			placeholder: $(this).data('placeholder'),
+			allowClear: Boolean($(this).data('allow-clear')),
+		});
+	</script>
+	<!-- App JS -->
+	<script src="assets/js/app.js"></script>
+</body>
+
+</html>

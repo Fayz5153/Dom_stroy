@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<title>Qoldiq Tavar</title>
+	<!--favicon-->
+	<link rel="icon" href="assets/images/favicon-32x32.png" type="image/png" />
+		<!-- Font Awesome -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+	<!--plugins-->
+	<link href="assets/plugins/simplebar/css/simplebar.css" rel="stylesheet" />
+	<link href="assets/plugins/select2/css/select2.min.css" rel="stylesheet" />
+	<link href="assets/plugins/select2/css/select2-bootstrap4.css" rel="stylesheet" />
+	<!--Data Tables -->
+	<link href="assets/plugins/datetimepicker/css/classic.css" rel="stylesheet" />
+	<link href="assets/plugins/datetimepicker/css/classic.time.css" rel="stylesheet" />
+	<link href="assets/plugins/datetimepicker/css/classic.date.css" rel="stylesheet" />
+	<link rel="stylesheet" href="assets/plugins/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link href="assets/plugins/datatable/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/plugins/datatable/css/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css">
+	<!--plugins-->
+	<link href="assets/plugins/simplebar/css/simplebar.css" rel="stylesheet" />
+	<link href="assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet" />
+	<link href="assets/plugins/metismenu/css/metisMenu.min.css" rel="stylesheet" />
+	<!-- loader-->
+	<link href="assets/css/pace.min.css" rel="stylesheet" />
+	<script src="assets/js/pace.min.js"></script>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+	<!-- Icons CSS -->
+	<link rel="stylesheet" href="assets/css/icons.css" />
+	<!-- App CSS -->
+	<link rel="stylesheet" href="assets/css/app.css" />
+	<link rel="stylesheet" href="assets/css/table.css">
+	
+	
+</head>
+
+<body class="bg-theme bg-theme9">
+	<!-- wrapper -->
+	<div class="wrapper">
+		<!--sidebar-wrapper-->
+		<div class="sidebar-wrapper" data-simplebar="true">
+			<div class="sidebar-header">
+				<div class="">
+					<img src="assets/images/logo-icon.png" class="logo-icon-2" alt="" />
+				</div>
+			</div>
+			<!--navigation-->
+			<ul class="metismenu" id="menu">
+				<li class="menu-label">Web Apps</li>
+				<li> <a href="index.html"><i class="bx bx-home-alt"></i>Analytics</a></li>
+				<li> <a href="./analytikasi.html"><i class="fadeIn animated bx bx-trending-up"></i>Tavar reytingi</a></li>
+				<li> <a href="./qoldiq-tovar.html"><i class="fadeIn animated bx bx-table"></i>Qoldiq tavar</a></li>
+				<li> <a href="./sotilgan-tovar.html"><i class="fadeIn animated bx bx-coin-stack"></i>Sotilgan tavar bo'yicha analiz</a></li>
+				<li> <a href="./buyurtma-berish.html"><i class="fadeIn animated bx bx-cart"></i>Buyurtma Berish</a></li>
+				<li> <a href="./hisobot.html"><i class="fadeIn animated bx bx-abacus"></i>Hisobot</a></li>
+				<li> <a href="./faktura.html"><i class="fadeIn animated bx bx-list-ol"></i>Faktura</a></li>
+			</ul>
+			<!--end navigation-->
+		</div>
+		<!--end sidebar-wrapper-->
+		<!--header-->
+		<header class="top-header">
+			<nav class="navbar navbar-expand">
+				<div class="left-topbar d-flex align-items-center">
+					<a href="javascript:;" class="toggle-btn">	<i class="bx bx-menu"></i>
+					</a>
+				</div>
+				<div class="right-topbar ml-auto">
+					<ul class="navbar-nav">
+						<li class="nav-item dropdown dropdown-user-profile">
+							<a class="nav-link dropdown-toggle dropdown-toggle-nocaret" href="javascript:;" data-toggle="dropdown">
+								<div class="media user-box align-items-center">
+									<div class="media-body user-info">
+										<p class="user-name mb-0">Jessica Doe</p>
+										<p class="designattion mb-0">Available</p>
+									</div>
+									<img src="https://via.placeholder.com/110x110" class="user-img" alt="user avatar">
+								</div>
+							</a>
+							<div class="dropdown-menu dropdown-menu-right">	<a class="dropdown-item" href="javascript:;"><i
+										class="bx bx-user"></i><span>Profile</span></a>
+								<a class="dropdown-item" href="javascript:;"><i
+										class="bx bx-cog"></i><span>Settings</span></a>
+								<a class="dropdown-item" href="javascript:;"><i
+										class="bx bx-tachometer"></i><span>Dashboard</span></a>
+								<a class="dropdown-item" href="javascript:;"><i
+										class="bx bx-wallet"></i><span>Earnings</span></a>
+								<a class="dropdown-item" href="javascript:;"><i
+										class="bx bx-cloud-download"></i><span>Downloads</span></a>
+								<div class="dropdown-divider mb-0"></div>	<a class="dropdown-item" href="javascript:;"><i
+										class="bx bx-power-off"></i><span>Logout</span></a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<!--end header-->
+		<!--page-wrapper-->
+		<div class="page-wrapper">
+			<!--page-content-wrapper-->
+			<div class="page-content-wrapper">
+				<div class="page-content">
+					<!--breadcrumb-->
+					<div class="page-breadcrumb d-none d-md-flex align-items-center mb-3">
+						<div class="pl-3">
+							<nav aria-label="breadcrumb">
+								<ol class="breadcrumb mb-0 p-0">
+									<li class="breadcrumb-item"><a href="javascript:;"><i class='bx bx-home-alt'></i></a>
+									</li>
+									<li class="breadcrumb-item active" aria-current="page">Qoldiq Tavar</li>
+								</ol>
+							</nav>
+						</div>
+					</div>
+					<!--end breadcrumb-->
+					<div class="card">
+						<div class="card-body">
+							<div class="card-title card__title">
+								<div class="divka">
+									<div class="input-group-prepend">
+										<button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Fililallar</button>
+										<div class="dropdown-menu">
+											<a class="dropdown-item" href="#">filial-1</a>
+											<a class="dropdown-item" href="#">filial-2</a>
+											<a class="dropdown-item" href="#">filial-3</a>
+											<a class="dropdown-item" href="#">filial-4</a>
+											<a class="dropdown-item" href="#">filial-5</a>
+										</div>
+									</div>
+									<div class="input-group-prepend">
+										<select class="single-select select2-hidden-accessible">
+											<option value=""></option>
+											<option value="maxsulot-1">maxsulot-1</option>
+											<option value="maxsulot-2">maxsulot-2</option>
+											<option value="maxsulot-3">maxsulot-3</option>
+											<option value="maxsulot-4">maxsulot-4</option>
+											<option value="maxsulot-5">maxsulot-5</option>
+										</select>
+									</div>
+								</div>
+								<div class="tovar_exel"></div>
+							</div>
+							<hr/>
+							<div class="table-responsive">
+								<table id="example" class="table table-striped table-bordered" style="width:100%">
+									<thead>
+										<tr>
+											<th>№</th>
+											<th>Maxsulot nomi</th>
+											<th>Yetkazib beruvchi</th>
+											<th>Ishlab chiqaruvchi</th>
+											<th>O'lchovi</th>
+											<th>Hozir bor</th>
+											<th>Narxi</th>
+											<th>Sotish narxi</th>
+											<th>Shtrix kod</th>
+										</tr>
+									</thead>
+									<tbody >
+										<tr>
+											<td>1</td>
+											<td>
+												<!-- Button trigger modal -->
+												<button type="button" class="button_modal" data-toggle="modal" data-target="#exampleModal1">Eshik Rom</button>
+												
+											</td>
+											<td>Akfa</td>
+											<td>Akfa</td>
+											<td>Dona</td>
+											<td>50</td>
+											<td><span data-value="kelish">90,000 </span> so'm</td>
+											<td><span data-value="sotish">120,000 </span> so'm</td>
+											<td>01234567891234</td>
+										</tr>
+										<tr>
+											<td>2</td>
+											<td>
+												<!-- Button trigger modal -->
+												<button type="button" class="button_modal" data-toggle="modal" data-target="#exampleModal2">Eshik Rom</button>
+												
+											</td>
+											<td>Alutex</td>
+											<td>Alutex</td>
+											<td>Dona</td>
+											<td>50</td>
+											<td><span data-value="kelish">110,000 </span> so'm</td>
+											<td><span data-value="sotish">180,000 </span>so'm</td>
+											<td>01234567891234</td>
+										</tr>
+										<tr>
+											<td>3</td>
+											<td>
+												<!-- Button trigger modal -->
+												<button type="button" class="button_modal" data-toggle="modal" data-target="#exampleModal3">Eshik Rom</button>
+												
+											</td>
+											<td>Imzo</td>
+											<td>Imzo</td>
+											<td>Dona</td>
+											<td>50</td>
+											<td><span data-value="kelish">190,000 </span> so'm</td>
+											<td><span data-value="sotish">250,000 </span> so'm</td>
+											<td>01234567891234</td>
+										</tr>
+									</tbody>
+									<tfoot>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+                					<td>Jami: <span class="narxi"></span> so'm</td>
+										<td>Jami: <span class="sotish_narxi"></span> so'm</td>
+										<td></td>
+										
+									</tfoot>
+								</table>
+							</div><hr>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--end page-content-wrapper-->
+		</div>
+		<!--end page-wrapper-->
+		<!--start overlay-->
+		<div class="overlay toggle-btn-mobile"></div>
+		<!--end overlay-->
+		<!--Start Back To Top Button--> <a href="javaScript:;" class="back-to-top"><i class='bx bxs-up-arrow-alt'></i></a>
+		<!--End Back To Top Button-->
+		<!--MODALLAR -->
+		<!-- Modal -->
+		<div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Buyurtma</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">	<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body" id="table__list">
+						<h6>Maxsulot : <span>Eshik Rom</span> </h6><hr>
+						<h6>Yetkazib Beruvchi : <span>Akfa</span></h6><hr>
+						<h6>Ishlab chiqaruvchi : <span>Akfa</span> </h6><hr>
+						<h6>Narxi : <input type="number" value="100000" class="form-control form-control-sm" name="" id=""></h6><hr>
+						<h6>Sotish Narhi : <input type="number" value="200000" class="form-control form-control-sm" name="" id=""></h6><hr>
+						<h6>Shtrix kod : <span>01234567891234</span></h6><hr>
+						<input type="number" class="form-control form-control-sm" placeholder="Maxsulot sonini kiriting">
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-light" data-dismiss="modal">Bekor qilish</button>
+						<button type="button" class="btn btn-light">Buyurtma Berish</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Modal -->
+		<div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Buyurtma</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">	<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body" id="table__list">
+						<h6>Maxsulot : <span>Eshik Rom</span> </h6><hr>
+						<h6>Yetkazib Beruvchi : <span>Alutex</span></h6><hr>
+						<h6>Ishlab chiqaruvchi : <span>Alutex</span> </h6><hr>
+						<h6>Narxi: <input type="number" value="100000" class="form-control form-control-sm" name="" id=""></h6><hr>
+						<h6>Sotish Narhi : <input type="number" value="200000" class="form-control form-control-sm" name="" id=""></h6><hr>
+						<h6>Shtrix kod : <span>01234567891234</span></h6><hr>
+						<input type="number" class="form-control form-control-sm" placeholder="Maxsulot sonini kiriting">
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-light" data-dismiss="modal">Bekor qilish</button>
+						<button type="button" class="btn btn-light">Buyurtma Berish</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Modal -->
+		<div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Buyurtma</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">	<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body" id="table__list">
+						<h6>Maxsulot : <span> Eshik Rom</span> </h6><hr>
+						<h6>Yetkazib Beruvchi : <span> Imzo</span></h6><hr>
+						<h6>Ishlab chiqaruvchi : <span> Imzo</span> </h6><hr>
+						<h6>Narxi: <input type="number" value="100000" class="form-control form-control-sm" name="" id=""></h6><hr>
+						<h6>Sotish Narhi : <input type="number" value="200000" class="form-control form-control-sm" name="" id=""></h6><hr>
+						<h6>Shtrix kod : <span>01234567891234</span></h6><hr>
+						<input type="number" class="form-control form-control-sm" placeholder="Maxsulot sonini kiriting">
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-light" data-dismiss="modal">Bekor qilish</button>
+						<button type="button" class="btn btn-light">Buyurtma Berish</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- end MODALLAR -->
+	</div>
+	<!-- end wrapper -->
+	<!-- JavaScript -->
+	<script>
+		//Jami kelish narxi
+		let values = document.querySelectorAll("[data-value='kelish']");
+		let valuesSum = document.querySelector(".narxi");
+		const numberFormat = new Intl.NumberFormat("en-GB")
+		let sum = 0;
+		for (let i =0; i < values.length; i++) {
+			 sum += Number(values[i].innerHTML.replace(/[\s.,%]/g, ''))
+		}
+		valuesSum.innerHTML = numberFormat.format(sum);
+		//Jami sotish narxi
+		let values1 = document.querySelectorAll("[data-value='sotish']");
+		let valuesSum1 = document.querySelector(".sotish_narxi");
+		const numberFormat1 = new Intl.NumberFormat("en-GB")
+		let sum1 = 0;
+		for (let i =0; i < values.length; i++) {
+			 sum1 += Number(values1[i].innerHTML.replace(/[\s.,%]/g, ''))
+		}
+		valuesSum1.innerHTML = numberFormat1.format(sum1)
+  </script>
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	<script src="assets/js/popper.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/jquery.min.js"></script>
+	<!--plugins-->
+	<script src="assets/plugins/simplebar/js/simplebar.min.js"></script>
+	<script src="assets/plugins/metismenu/js/metisMenu.min.js"></script>
+	<script src="assets/plugins/datetimepicker/js/legacy.js"></script>
+	<script src="assets/plugins/datetimepicker/js/picker.js"></script>
+	<script src="assets/plugins/datetimepicker/js/picker.time.js"></script>
+	<script src="assets/plugins/datetimepicker/js/picker.date.js"></script>
+	<script src="assets/plugins/perfect-scrollbar/js/perfect-scrollbar.js"></script>
+	<script src="assets/plugins/select2/js/select2.min.js"></script>
+	<!--Data Tables js-->
+	<script src="assets/plugins/datatable/js/jquery.dataTables.min.js"></script>
+	<script src="assets/plugins/edittable/bstable.js"></script>
+	<script>
+		$(document).ready(function () {
+			//Default data table
+			var table = $('#example').DataTable({
+				buttons: ['excel']
+			});
+			table.buttons().container().appendTo('.tovar_exel');
+		})
+	</script>
+	<script>
+		$('.datepicker').pickadate({
+			selectMonths: true,
+	      selectYears: true
+		}),
+		$('.timepicker').pickatime()
+	</script>
+	<script>
+		$('.single-select').select2({
+			theme: 'bootstrap4',
+			width: $(this).data('width') ? $(this).data('width') : $(this).hasClass('w-100') ? '100%' : 'style',
+			placeholder: $(this).data('placeholder'),
+			allowClear: Boolean($(this).data('allow-clear')),
+		});
+	</script>
+	<!-- App JS -->
+	<script src="assets/js/app.js"></script>
+</body>
+
+</html>
